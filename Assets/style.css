@@ -66,7 +66,11 @@ a {
 }
 
 p {
-    font-size: 16px;
+    font-size: 20px;
+    margin-left: 110px;
+    /* margin-right: -500px; */
+    
+    
 }
 
 .hero {
@@ -85,28 +89,29 @@ p {
 
 .float-right {
     float: right;
-    margin-left: 25px;
+    margin-left: 70px;
 }
 
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
+    
 }
 
 .benefits {
-    margin-right: 20px;
+    margin-left: 500px;
     padding: 20px;
     clear: both;
     float: right;
-    width: 20%;
+    width: 25%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+    
 }
 
 .benefit-lead {
-    margin-bottom: 32px;
+    margin-top: -700px;
     color: #ffffff;
 }
 
@@ -153,58 +158,68 @@ p {
     max-width: 150px;
 }
 
-.search-engine-optimization {
+.about-me {
     margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
+    padding: 20px;
+    height: 150px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+    color: #000000;
 }
 
-.online-reputation-management {
+.work {
     margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
+    padding: 20px;
+    height: 150px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+    color: #000000;
 }
 
-.social-media-marketing {
+.contact-me {
     margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
+    padding: 20px;
+    height: 150px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+    color: #000000;
 }
 
-.search-engine-optimization img {
+.resume {
+    margin-bottom: 20px;
+    padding: 20px;
+    height: 150px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000000;
+}
+
+.about-me img {
     max-height: 200px;
 }
 
-.online-reputation-management img {
+.work img {
     max-height: 200px;
 }
 
-.social-media-marketing img {
+.contact-me img {
     max-height: 200px;
 }
 
-.search-engine-optimization h2 {
+.about-me h2 {
     margin-bottom: 20px;
-    font-size: 36px;
+    font-size: 30px;
 }
 
-.online-reputation-management h2 {
+.work h2 {
     margin-bottom: 20px;
-    font-size: 36px;
+    font-size: 30px;
 }
 
-.social-media-marketing h2 {
+.contact-me h2 {
     margin-bottom: 20px;
-    font-size: 36px;
+    font-size: 30px;
+}
+
+.resume h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
 }
 
 .footer {
@@ -218,3 +233,60 @@ p {
     font-size: 20px;
 }
 
+@media screen and (max-width: 992px) {
+    .content {
+      width: 50%;
+    }
+    /* Change the header color */
+    .header {
+      background: #772014;
+    }
+  }
+  
+  /* Cards are stacked on top of each other at 768px or smaller */
+  @media screen and (max-width: 768px) {
+    .content {
+      width: 75%;
+    }
+    /* Change the header color */
+    .header {
+      background: #8ac4ff;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .content {
+      width: 100%;
+    }
+    /* Change the header color */
+    .header {
+      background: #397b5f;
+    }
+  }
+
+
+
+
+
+
+
+/* Tablets - header changes color */
+/* @media screen and (max-width: 992px) {
+  header {
+    background: #772014;
+  }
+} */
+
+/* Large smartphones - navbar changes color */
+/* @media screen and (max-width: 768px) {
+  nav {
+    background-color: #bb8588;
+  }
+} */
+
+/* Small smartphones - image placeholders change color */
+/* @media screen and (max-width: 576px) {
+  .sample-img {
+    background-color: #8ac4ff;
+  }
+} */
