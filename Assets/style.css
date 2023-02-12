@@ -1,268 +1,200 @@
-/* Copied and refactored code from Challenge 1 */
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    background-color: #ffffff;
-}
-
-.header {
-    padding: 15px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2d3336;
-    color: #501f1f;
-    display:flex;
-    
-}
-
-.header h1 {
-    display:inline-block;
-    font-size: 48px;
-    background-color: #4eb3e5;
-    padding-left: 70px;
-    padding-right: 20px;
-    color: #2d3336;
-    
-}
-
-
-
-.header header {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
-
-.header nav {
-    /* Nav bar shows on left, have to move to right */
-    list-style-type: none;
-    margin-top: 50px;
-    margin-left: 25px;
-    justify-content: flex-start;
-  }
-  
-.header nav a {
-    color: #4eb3e5;
-    margin-left: 15px;
-    text-decoration: none;
-    text-align: center;
-    
-  }
-
-a {
-    color: #4eb3e5;
-    text-decoration: none;
-    border-bottom: 3.5px solid #4eb3e5;
-    font-size: 20px;
-    
-}
-
-p {
-    font-size: 20px;
-    margin-left: 110px;
-    /* margin-right: -500px; */
-    
-    
-}
-
-.hero {
-    height: 120px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/red-spider-lily.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 70px;
-}
-
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
-
-.contact-me  {
-    display: block;
-    clear: both;
-    position: absolute;
-    z-index: 2;
-}
-
-
-
-.about-me {
-    display: block;
-    clear: both;
-    margin-bottom: 20px;
-    padding: 20px;
-    height: 150px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #000000;
-}
-
-.work {
-    display: block;
-    clear: both;
-    margin-bottom: 20px;
-    padding: 20px;
-    height: 150px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #000000;
-}
-
-.products {
-    display: flex;
-    flex-direction: row;
-    /* Centers along the main axis determined by flex-direction */
-    justify-content: center;
-    /* Centers along the opposite axis */
-    align-items: center;
-    width: 90%;
-    /* Uses the height of the viewport */
-    height: 100vh;
-    margin: 0 auto;
-    border-style: solid;
-    border-width: 2px;
-}
-
-.first-proj{
-    flex-wrap: wrap;
-}
-
-.first-proj img{
-    
-    display: block;
-    width: 100%;
-    position: relative;
-    z-index: 1;
-}
-
-.card {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-.card img {
-    float:left;
-    display: block;
-    width: 50%;
-    position: relative;
-    z-index: 1;
-  }  
-  /* .card header {
-    padding: 20px;
-  }
-  
-  .card p {
-    text-align: center;
-  } */
-
-
-
-@media (max-width: 768px) {
-    .container img {
-      width: 100%;
+      /* Add styles for the body of the page */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
     }
-  }
 
-.contact-me {
+      /* Add styles for the header */
+    header {
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .header {
+        padding: 15px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: #2d3336;
+        
+        display:flex;
+        
+    }
+    .header h1 {
+        display:inline-block;
+        font-size: 48px;
+        background-color: #4eb3e5;
+        /* padding-left: 10px; */
+        padding-right: 20px;
+        color: #2d3336;
+        
+    }
+
     
-    clear: both;
-    margin-bottom: 20px;
-    padding: 20px;
-    height: 150px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #000000;
-}
+      /* Add styles for the logo */
+      /* .logo {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+    } */
 
-.resume {
+      /* Add styles for the navigation menu */
+    nav {
+        display: flex;
+    }
+
+    .header nav a {
+        color: #fff;
+        padding: 17px;
+        font-size: 20px;
+    }
+
+    .hero {
+        height: 120px;
+        width: 100%;
+        margin-bottom: 20px;
+        background-image: url("../images/red-spider-lily.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+      /* Add styles for the main content */
+    main {
+        padding: 20px;
+    }
+
+    .me img{
+      display:block;
+      margin: 0 auto;
+      width: 25%;
+      height: 25%;
+    }
+
+      /* Add styles for the about section */
+    .about {
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+    .about p{
+      line-height: 200%;
+    }
+    /* .contacts {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: wrap;
+    } */
+
+    #contact-me a{
+      padding: 50px;
+      margin: 0 1em;
+      margin-left: 50px;
+      /* flex-basis: 20%; */
+      text-align: center;
+      
+    }
+   
+    .center {
+      text-align: center;   
+    }  
     
-    clear: both;
-    margin-bottom: 20px;
-    padding: 20px;
-    height: 150px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #000000;
-}
+    .first-proj{
+        flex-wrap: wrap;
+    }
+    
+    .first-proj img{
+        padding-bottom: 20px;
+        display: block;
+        width: 99.7%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .card img {
+        display:block;  
+        padding-bottom: 20px;
+        float:left;
+        display: block;
+        width: 49.2%;
+        position: relative;
+        z-index: 1;
+    }  
+    
+    /* .card p{
+      display: block;
+      margin-top: 10px;
+    } */
+      /* Add styles for the skills section */
+    .skills {
+        padding: 20px;
+    }
+
+      /* Add styles for the work section */
+    .work {
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+      /* Add styles for the project images */
+    .project-image {
+        max-width: 100%;
+        height: auto;
+        width: 30%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+      /* Add styles for the footer */
+    footer {
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        align-items: center;
+    }
+
+    @media only screen and (max-width: 768px) {
+      #contact-me a {
+        display: block;
+        width: 65%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .me img{
+        width: 30%;
+        height: 30%;
+      }
+    }
+    
+      /* Add media queries for responsive design */
+      @media only screen and (max-width: 600px) {
+        header {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        nav {
+          justify-content: center;
+        }
+
+        .project-image, .about-image {
+          width: 100%;
+          float: none;
+        }
+      
+
+    }
 
 
-/* .work img {
-    max-height: 200px;
-} */
-
-
-
-.about-me h2 {
-    margin-bottom: 20px;
-    font-size: 30px;
-}
-
-.work h2 {
-    margin-bottom: 20px;
-    font-size: 30px;
-}
-
-.contact-me h2 {
-    margin-bottom: 20px;
-    font-size: 30px;
-}
-
-.resume h2 {
-    margin-bottom: 20px;
-    font-size: 30px;
-}
-
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-}
-
-.footer h2 {
-    font-size: 20px;
-}
-
-
-
-
-
-
-
-
-
-/* Tablets - header changes color */
-/* @media screen and (max-width: 992px) {
-  header {
-    background: #772014;
-  }
-} */
-
-/* Large smartphones - navbar changes color */
-/* @media screen and (max-width: 768px) {
-  nav {
-    background-color: #bb8588;
-  }
-} */
-
-/* Small smartphones - image placeholders change color */
-/* @media screen and (max-width: 576px) {
-  .sample-img {
-    background-color: #8ac4ff;
-  }
-} */
