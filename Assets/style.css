@@ -1,13 +1,13 @@
 
       /* Add styles for the body of the page */
-      body {
+    body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
     }
 
       /* Add styles for the header */
-      header {
+    header {
         background-color: #333;
         color: #fff;
         display: flex;
@@ -44,17 +44,17 @@
     } */
 
       /* Add styles for the navigation menu */
-      nav {
+    nav {
         display: flex;
     }
 
-     .header nav a {
+    .header nav a {
         color: #fff;
-        padding: 20px;
+        padding: 17px;
         font-size: 20px;
     }
 
-      .hero {
+    .hero {
         height: 120px;
         width: 100%;
         margin-bottom: 20px;
@@ -63,29 +63,52 @@
         background-position: center;
     }
       /* Add styles for the main content */
-      main {
+    main {
         padding: 20px;
     }
 
+    .me img{
+      display:block;
+      margin: 0 auto;
+      width: 25%;
+      height: 25%;
+    }
+
       /* Add styles for the about section */
-      .about {
+    .about {
         background-color: #f2f2f2;
         padding: 20px;
     }
 
-      /* Add styles for the about section images */
-      .about-image {
-        float: left;
-        margin-right: 20px;
-        width: 30%;
+    .about p{
+      line-height: 200%;
     }
+    /* .contacts {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: wrap;
+    } */
 
+    #contact-me a{
+      padding: 50px;
+      margin: 0 1em;
+      margin-left: 50px;
+      /* flex-basis: 20%; */
+      text-align: center;
+      
+    }
+   
+    .center {
+      text-align: center;   
+    }  
+    
     .first-proj{
         flex-wrap: wrap;
     }
     
     .first-proj img{
-        padding-bottom: 5px;
+        padding-bottom: 20px;
         display: block;
         width: 99.7%;
         position: relative;
@@ -95,31 +118,36 @@
     .card {
         display: flex;
         flex-wrap: wrap;
-      }
+    }
     
     .card img {
-        padding: 2px;
+        display:block;  
+        padding-bottom: 20px;
         float:left;
         display: block;
         width: 49.2%;
         position: relative;
         z-index: 1;
-      }  
+    }  
     
+    /* .card p{
+      display: block;
+      margin-top: 10px;
+    } */
       /* Add styles for the skills section */
-      .skills {
+    .skills {
         padding: 20px;
     }
 
       /* Add styles for the work section */
-      .work {
+    .work {
         padding: 20px;
         display: flex;
         flex-wrap: wrap;
     }
 
       /* Add styles for the project images */
-      .project-image {
+    .project-image {
         max-width: 100%;
         height: auto;
         width: 30%;
@@ -128,7 +156,7 @@
     }
 
       /* Add styles for the footer */
-      footer {
+    footer {
         background-color: #333;
         color: #fff;
         display: flex;
@@ -137,6 +165,19 @@
         align-items: center;
     }
 
+    @media only screen and (max-width: 768px) {
+      #contact-me a {
+        display: block;
+        width: 65%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .me img{
+        width: 30%;
+        height: 30%;
+      }
+    }
+    
       /* Add media queries for responsive design */
       @media only screen and (max-width: 600px) {
         header {
@@ -152,5 +193,8 @@
           width: 100%;
           float: none;
         }
+      
+
     }
-    
+
+
