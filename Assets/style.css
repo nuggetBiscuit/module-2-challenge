@@ -27,21 +27,12 @@
     .header h1 {
         display:inline-block;
         font-size: 48px;
-        background-color: #4eb3e5;
+        background-color: #8dc5cd;
         /* padding-left: 10px; */
         padding-right: 20px;
         color: #2d3336;
         
     }
-
-    
-      /* Add styles for the logo */
-      /* .logo {
-        font-size: 20px;
-        text-transform: uppercase;
-        font-weight: bold;
-        letter-spacing: 2px;
-    } */
 
       /* Add styles for the navigation menu */
     nav {
@@ -49,11 +40,12 @@
     }
 
     .header nav a {
-        color: #fff;
+        color: #8dc5cd;
         padding: 17px;
         font-size: 20px;
     }
 
+    /* Adds a flower banner at top */
     .hero {
         height: 120px;
         width: 100%;
@@ -75,38 +67,43 @@
     }
 
       /* Add styles for the about section */
-    .about {
+    .sizing {
         background-color: #f2f2f2;
         padding: 20px;
     }
 
-    .about p{
+    .sizing h2{
+      font-size: 35px;
+    }
+
+    .sizing p{
       line-height: 200%;
     }
-    /* .contacts {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: wrap;
-    } */
-
+ 
     #contact-me a{
       padding: 50px;
       margin: 0 1em;
       margin-left: 50px;
-      /* flex-basis: 20%; */
       text-align: center;
-      
     }
    
     .center {
       text-align: center;   
     }  
+
+    #resume a {
+      padding: 50px;
+      margin: 0 1em;
+      margin-left: 510px;
+      /* flex-basis: 20%; */
+      text-align: center;
+    }
     
     .first-proj{
         flex-wrap: wrap;
     }
     
+    /* Add styles for the project images */
     .first-proj img{
         padding-bottom: 20px;
         display: block;
@@ -120,6 +117,7 @@
         flex-wrap: wrap;
     }
     
+    /* Add styles for the project images */
     .card img {
         display:block;  
         padding-bottom: 20px;
@@ -130,29 +128,12 @@
         z-index: 1;
     }  
     
-    /* .card p{
-      display: block;
-      margin-top: 10px;
-    } */
-      /* Add styles for the skills section */
-    .skills {
-        padding: 20px;
-    }
 
       /* Add styles for the work section */
     .work {
         padding: 20px;
         display: flex;
         flex-wrap: wrap;
-    }
-
-      /* Add styles for the project images */
-    .project-image {
-        max-width: 100%;
-        height: auto;
-        width: 30%;
-        margin-right: 20px;
-        margin-bottom: 20px;
     }
 
       /* Add styles for the footer */
@@ -165,6 +146,7 @@
         align-items: center;
     }
 
+    /* Makes is so all elements can accomodate screen sizes smaller than 768px */
     @media only screen and (max-width: 768px) {
       #contact-me a {
         display: block;
@@ -175,6 +157,13 @@
       .me img{
         width: 30%;
         height: 30%;
+      }
+      #resume a {
+        padding: 50px;
+        margin: 0 1em;
+        margin-left: 205px;
+        /* flex-basis: 20%; */
+        text-align: center;
       }
     }
     
@@ -189,11 +178,6 @@
           justify-content: center;
         }
 
-        .project-image, .about-image {
-          width: 100%;
-          float: none;
-        }
-      
 
     }
 
