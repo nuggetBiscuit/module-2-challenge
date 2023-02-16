@@ -1,6 +1,16 @@
 
       /* Copied and refactored code from Challenge 1 */
       
+      /* Create CSS variables at the root of the document to be used throughout the style sheet */
+      :root {
+        --white: #fff;
+        --funky-blue: #8dc5cd;
+        --black: #2d3336;
+        /* You can use it with any value that is repeated throughout the sheet */
+        --border-radius: 50px;
+      }
+
+
       /* Add styles for the body of the page */
       body {
         font-family: Arial, sans-serif;
@@ -11,7 +21,7 @@
       /* Add styles for the header */
     header {
         background-color: #333;
-        color: #fff;
+        color: var(--white);
         display: flex;
         justify-content: space-between;
         padding: 20px;
@@ -21,7 +31,7 @@
     .header {
         padding: 15px;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        background-color: #2d3336;
+        background-color: var(--black);
         
         display:flex;
         
@@ -29,10 +39,10 @@
     .header h1 {
         display:inline-block;
         font-size: 48px;
-        background-color: #8dc5cd;
+        background-color: var(--funky-blue);
         /* padding-left: 10px; */
         padding-right: 20px;
-        color: #2d3336;
+        color: var(--black);
         
     }
 
@@ -42,7 +52,7 @@
     }
 
     .header nav a {
-        color: #8dc5cd;
+        color: var(--funky-blue);
         padding: 17px;
         font-size: 20px;
     }
@@ -141,7 +151,7 @@
       /* Add styles for the footer */
     footer {
         background-color: #333;
-        color: #fff;
+        color: var(--white);
         display: flex;
         justify-content: center;
         padding: 20px;
